@@ -1,1 +1,236 @@
 #My web resume using html and css.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            background-color:beige;
+        }
+
+        nav div {
+            width: 300px;
+            height: 1100px;
+            background-color: black;
+        }
+    aside{
+        width: 300px;
+            height: 1100px;
+            background-color: black;
+    }
+      section {
+            float: right;
+            margin-left: 30px;
+            font-family: inherit;
+            width: 100%;
+
+        }
+
+        .firsthead {
+            font-size: 5rem;
+            margin: 0;
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        .sechead {
+            margin: 0;
+            font-size: 2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .thirdhead {
+            margin: 0;
+            font-size: 1rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .fourthhead:hover {
+            transform: translateX(30px);
+            transition: 0.5s;
+            background-color:aqua
+        }
+
+        .fourthhead {
+
+            font-size: 46px;
+            margin: 0;
+            margin-top: 40px;
+        }
+
+        .fifthhead {
+            margin: 0;
+            margin-top: 3px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .sixthhead {
+            margin: 0;
+        }
+
+        .sevenhead {
+            margin: 0;
+            margin-top: 3px;
+        }
+
+        section ul {
+            margin-left: 16px;
+            color: black;
+        }
+
+        section table {
+            margin-top: 6px;
+        }
+
+        nav img {
+            border: 29px solid;
+            border-radius: 400px;
+        }
+
+        nav p {
+
+            color: aliceblue;
+            margin: 0;
+            margin-left: 39px;
+            font-size: 1.6rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .sidehead2 {
+            margin-top: 30px;
+            margin-left: 39px;
+            font-size: 1.6rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        hr {
+            margin: 0;
+            margin-left: 39px;
+            color: aliceblue;
+
+        }
+
+        p.space {
+            font-size: medium;
+            margin-top: 20px;
+        }
+
+        p.space1 {
+            font-size: 13px;
+        }
+
+        ul {
+            color: aliceblue;
+            margin-left: 16px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div><img
+                src="data:image/jpeg;base64,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">
+            <p>Contact</p>
+            <hr>
+            <p class="space">Email id</p>
+            <p class="space1"><a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+            <p class="space">Phone</p>
+            <p class="space1"><a href="tel:+911234567890">1234567890</a></p>
+            <p class="sidehead2">Skills</p>
+            <hr>
+            <ul>
+                <li>Git and Github</li>
+                <li>Version Control</li>
+                <li>Python Progamming</li>
+                <li>Basic Javascript</li>
+                <li>Advanced Javascript</li>
+                <li>Typescript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Frontend Development using React and CSS</li>
+                <li>Interpreting web pages using inspect element and console logging</li>
+            </ul>
+            <p class="sidehead2">Languages Known</p>
+            <hr>
+            <ul>
+                <li>Tamil</li>
+                <li>English</li>
+                <li>Hindi</li>
+            </ul>
+            <p class="sidehead2">Area Of Interest</p>
+            <hr>
+            <ul>
+                <li>Frontend Development</li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <section>
+        <header>
+            <p class="firsthead">Madhumitha P</p>
+            <p class="sechead">Frontend Developer</p>
+            <p class="thirdhead">It is my oppurtunity to utilize my skills and I will give my best to the company's
+                growth.</p>
+            <p class="fourthhead">Education</p>
+            <p class="fifthhead">Anna University Regional Campus, Madurai, Tamilnadu (2018-2022).</p>
+            <p class="sixthhead">Electronics And Communication Engineering</p>
+            <p class="sixthhead">cgpa-7.37</p>
+            <p class="fourthhead">Experience</p>
+            <p class="sevenhead">3 Months- Internship program in Arus Info Private Limited(July 2022-October 2022).</p>
+            <p class="fourthhead">Training Projects</p>
+            <ul>
+                <li>3 Bills Problem, calculating who owes how much money to whom after the split payments.</li>
+                <li>Round Robin; scheduling matches between teams in such a way that every team gets an opportunity to
+                    play with other teams, and no 2 teams face other again.</li>
+                <li>Version Control; Calculating total number of published versions, along with highest contributing
+                    authors towards publishing of app updates, as well as sorting the publishing versions based on
+                    number of bugs the particular version has fixed.</li>
+                <li>Tennis Grand Slam Draw; This project was intended to schedule matches between players based on
+                    ranking or rating of each player. So using probability distribution and Math random function it has
+                    to be proved that the Player 8 has less than 9% chance to win against the Player 1.</li>
+                <li>Heads you win; This project was intended to get the score based on tosses conducted by computer &
+                    player. The tosses carried out was in the interval of 1 second and total 4 rounds.
+                    Each round has 10 tosses. The output, who leads by how many heads was being consoled out after
+                    every round.</li>
+            </ul>
+            <p class="fourthhead">Github Link</p>
+            <p ><a href="https://github.com/madhumitha246810">https://github.com/madhumitha246810</a></p>
+            <p class="fourthhead">Personal Details</p>
+            <table>
+                <tr>
+                    <td>Father's Name-</td>
+                    <td>K Panju</td>
+                </tr>
+                <tr>
+                    <td style="float: right;">Gender-</td>
+                    <td>Female</td>
+                </tr>
+                <tr>
+                    <td>Marital Status-</td>
+                    <td>Single</td>
+                </tr>
+
+            </table>
+        </header>
+    </section>
+    <aside ></aside>
+    
+    
+</body>
+
+</html>
